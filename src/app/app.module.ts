@@ -18,6 +18,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 registerLocaleData(zh);
 
@@ -32,6 +33,7 @@ registerLocaleData(zh);
     MenuComponent,
     NotFoundComponent,
     BreadcrumbComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,

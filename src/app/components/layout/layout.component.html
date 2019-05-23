@@ -5,13 +5,19 @@
   </nz-sider>
   <nz-layout>
     <nz-header style="background: #fff; padding:0;">
-      <i class="trigger" nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
-        (click)="isCollapsed = !isCollapsed"></i>
+      <div class="toolBar">
+        <i class="trigger" nz-icon [type]="isCollapsed ? 'menu-unfold' : 'menu-fold'"
+          (click)="isCollapsed = !isCollapsed"></i>
+        <div>
+          <nz-avatar nzIcon="user" nzSrc="//zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png"></nz-avatar>
+          <app-logout></app-logout>
+        </div>
+      </div>
     </nz-header>
     <nz-content style="margin:0 16px;">
       <app-breadcrumb></app-breadcrumb>
       <div style="padding:24px; background: #fff; min-height: 360px;">
-          <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
       </div>
     </nz-content>
     <nz-footer style="text-align: center;">Ant Design ©2019 Implement By Angular</nz-footer>
